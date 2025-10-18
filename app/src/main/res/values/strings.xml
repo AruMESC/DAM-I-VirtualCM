@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">VirtualCM</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="welcome_heading">Bienvenido!</string>
+    <string name="welcome_tagline"></string>
 </resources>
