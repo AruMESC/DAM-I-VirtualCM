@@ -1,2 +1,3 @@
 # DAM-I-VirtualCM
-Proyecto personal para DAM I
+Proyecto aplicativo para DAM I
+Aplicación de comando virtual para restaurante.
