@@ -101,7 +101,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nuevo en nuestra app? "/>
+                android:text="¿Nuevo por aquí? "/>
 
             <TextView
                 android:id="@+id/tvRegistro"

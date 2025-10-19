@@ -6,7 +6,8 @@
     android:id="@+id/dlMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,12 +36,13 @@
     </LinearLayout>
     
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nvMenu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:headerLayout=""
-        app:menu="">
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/menu_principal">
 
     </com.google.android.material.navigation.NavigationView>
 

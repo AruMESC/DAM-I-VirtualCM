@@ -33,6 +33,7 @@
         <item name="layout_constraintStart_toStartOf">parent</item>
         <item name="layout_constraintEnd_toEndOf">parent</item>
         <item name="android:fontFamily">@font/spl</item>
+        <item name="android:textAlignment">center</item>
         <item name="android:textSize">28sp</item>
         <item name="android:textStyle">bold</item>
     </style>

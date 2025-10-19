@@ -22,6 +22,7 @@
             android:gravity="center">
 
             <TextView
+                android:id="@+id/tvTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Registro de nuevo usuario"
@@ -29,11 +30,176 @@
                 style="@style/subtitulo"/>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Usuario">
+                android:hint="Usuario"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:counterMaxLength="15"
+                app:counterEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:maxLength="15"/>
 
             </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/llNomCompletoUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="16dp"
+                    android:weightSum="2">
+                    
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilNombres"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Nombres"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        app:boxCornerRadiusBottomEnd="16dp"
+                        app:boxCornerRadiusTopStart="16dp"
+                        app:boxCornerRadiusBottomStart="16dp"
+                        app:boxCornerRadiusTopEnd="16dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tietNombres"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:inputType="textCapWords"
+                            android:nextFocusDown="@id/tietApellidos"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilApellidos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Apellidos"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        app:boxCornerRadiusBottomEnd="16dp"
+                        app:boxCornerRadiusTopStart="16dp"
+                        app:boxCornerRadiusBottomStart="16dp"
+                        app:boxCornerRadiusTopEnd="16dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tietApellidos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:inputType="textCapWords"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp">
+                
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número telefónico"
+                app:counterMaxLength="9"
+                app:counterEnabled="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietFono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:maxLength="9"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp"
+                app:passwordToggleEnabled="true"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrarse"
+                android:layout_marginTop="16dp"
+                style="@style/boton"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Ya tienes una cuenta? "/>
+
+                <TextView
+                    android:id="@+id/tvRegresoLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Iniciar sesión"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
