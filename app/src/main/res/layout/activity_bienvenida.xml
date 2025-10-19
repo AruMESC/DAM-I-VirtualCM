@@ -25,10 +25,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:text="Sabor perucho"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            style="@style/titulo"
-            android:textSize="36sp"/>
+            style="@style/titulo"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -36,16 +33,14 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:text="Bienvenido"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            style="@style/titulo"
-            android:textSize="36sp"/>
+            style="@style/subtitulo"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/btnIrRegistro"
                 android:layout_width="0dp"
@@ -53,8 +48,8 @@
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:text="Registrarse"
-                tools:ignore="ButtonStyle"
                 style="@style/boton"/>
+
             <Button
                 android:id="@+id/btnIrLogin"
                 android:layout_width="0dp"
@@ -64,6 +59,7 @@
                 android:text="Iniciar sesión"
                 tools:ignore="ButtonStyle"
                 style="@style/boton"/>
+
         </LinearLayout>
 
         <LinearLayout
@@ -73,24 +69,24 @@
             android:orientation="horizontal"
             android:gravity="center">
             <ImageButton
-                android:id="@+id/imgX"
+                android:id="@+id/ibX"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@mipmap/ic_x_foreground"
                 android:background="?attr/selectableItemBackgroundBorderless" />
             <ImageButton
-                android:id="@+id/imgFb"
+                android:id="@+id/ibFb"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="16dp"
                 android:src="@mipmap/ic_fb_foreground"
                 android:background="?attr/selectableItemBackgroundBorderless" />
             <ImageButton
-                android:id="@+id/imgGoogle"
+                android:id="@+id/ibInstagram"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="16dp"
-                android:src="@mipmap/ic_google_foreground"
+                android:src="@mipmap/ic_instagram_foreground"
                 android:background="?attr/selectableItemBackgroundBorderless" />
         </LinearLayout>
     </LinearLayout>
